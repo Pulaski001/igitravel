@@ -72,7 +72,7 @@ const AppSummary = () => {
   
     try {
       // Send data to backend endpoint
-      const response = await axios.post('http://localhost:8081/register', formDataToSend, 
+      const response = await axios.post(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/register`, formDataToSend, 
         {headers: {
           'Content-Type': 'application/json',
           'Authorization': `Bearer 39109f7df56e1051c39YNM9e6YK85066bb852`,
